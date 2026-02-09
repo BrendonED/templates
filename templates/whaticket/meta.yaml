@@ -1,0 +1,66 @@
+name: Whaticket Saas
+description:
+  Whaticket is a multi-agent chat system for WhatsApp with a SaaS structure.
+  It allows you to manage multiple WhatsApp numbers in a single panel, with
+  ticket management, departments, and more.
+instructions: null
+changeLog:
+  - date: 2024-02-09
+    description: Initial release
+links:
+  - label: Website
+    url: https://github.com/BrendonED/whaticket-teste
+  - label: Github
+    url: https://github.com/BrendonED/whaticket-teste
+contributors:
+  - name: Brendon Eduardo
+    url: https://github.com/BrendonED
+schema:
+  type: object
+  required:
+    - appServiceName
+    - frontendDomain
+    - backendDomain
+  properties:
+    appServiceName:
+      type: string
+      title: Service Name Prefix
+      default: whaticket
+    frontendDomain:
+      type: string
+      title: Frontend Domain
+      default: app.seudominio.com
+    backendDomain:
+      type: string
+      title: Backend API Domain
+      default: api.seudominio.com
+    databasePassword:
+      type: string
+      title: Database Password
+      default: strongpassword
+    redisPassword:
+      type: string
+      title: Redis Password
+      default: strongpassword
+    jwtSecret:
+      type: string
+      title: JWT Secret (Random if empty)
+      default: ""
+    jwtRefreshSecret:
+      type: string
+      title: JWT Refresh Secret (Random if empty)
+      default: ""
+benefits:
+  - title: Multi-Agent
+    description: Manage multiple attendants on a single WhatsApp number.
+  - title: SaaS Ready
+    description: Built with a SaaS structure to manage multiple companies.
+features:
+  - Ticket Management
+  - Quick Answers
+  - Kanban Board
+  - Contacts Management
+tags:
+  - WhatsApp
+  - CRM
+  - Chat
